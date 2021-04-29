@@ -1,34 +1,31 @@
 #!/bin/bash
 
-sudo xbps-install -Sy     \
-        neofetch          \
-        python            \
-        python-pip        \
-        python3           \
-        python3-pip       \
-        ranger            \
-        ninja             \
-        gettext           \
-        libtool           \
-        libltdl           \
-        autoconf          \
-        automake          \
-        cmake             \
-        gcc               \
-        gcc6              \
-        pkg-config        \
-        unzip             \
-        libX11-devel      \
-        libXext-devel     \
-        tmux              \
-        zsh               \
-        curl              \
-        wget              \
-        git               \
-        nodejs            \
-        ripgrep           \
-        the_silver_searcher
-
+sudo apt update      -y   
+sudo apt install     -y   \
+         neofetch          \
+         python3           \
+         python2           \
+         python3-pip       \
+         ranger            \
+         ninja-build       \
+         gettext           \
+         libtool           \
+         libtool-bin       \
+         autoconf          \
+         automake          \
+         cmake             \
+         g++               \
+         pkg-config        \
+         unzip             \
+         libx11-dev        \
+         libxext-dev       \
+         tmux              \
+         zsh               \
+         curl              \
+         wget              \
+         git               \
+         silversearcher-ag \
+ 
 
 
 
