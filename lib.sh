@@ -1,31 +1,32 @@
 #!/bin/bash
 
-sudo apt update      -y   
-sudo apt install     -y   \
-         neofetch          \
-         python3           \
-         python2           \
-         python3-pip       \
-         ranger            \
-         ninja-build       \
-         gettext           \
-         libtool           \
-         libtool-bin       \
-         autoconf          \
-         automake          \
-         cmake             \
-         g++               \
-         pkg-config        \
-         unzip             \
-         libx11-dev        \
-         libxext-dev       \
-         tmux              \
-         zsh               \
-         curl              \
-         wget              \
-         git               \
-         silversearcher-ag \
- 
+sudo apt-get update    -y  
+sudo apt-get install   -y \
+        neofetch          \
+        python3           \
+        python2           \
+        python3-pip       \
+        ranger            \
+        ninja-build       \
+        gettext           \
+        libtool           \
+        libtool-bin       \
+        autoconf          \
+        automake          \
+        cmake             \
+        g++               \
+        pkg-config        \
+        unzip             \
+        libx11-dev        \
+        libxext-dev       \
+        tmux              \
+        zsh               \
+        curl              \
+        wget              \
+        git               \
+        silversearcher-ag \
+
+
 
 
 
