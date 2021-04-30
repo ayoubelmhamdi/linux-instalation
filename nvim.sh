@@ -25,23 +25,7 @@ mkdir -p $HOME/.config/coc/extensions
 echo '{"dependencies":{}}'> $HOME/.config/coc/extension/package.json
 
 
-#+++++++++++++++++++++++++++++++++++++++++++++++
-
-##mv -f $HOME/.config/nvim/init.vim                  \
-##      $HOME/.config/nvim/init.vim.bac
-##
-##mv -f $HOME/.config/nvim/confPlugin/plugins.vim    \
-##      $HOME/.config/nvim/init.vim 
-##
 nvim $HOME/.config/nvim/init.vim                   \
      +PlugInstall                                  \
+     +PlugInstall                                  \
      +qall 
-##
-##
-##mv -f $HOME/.config/nvim/init.vim                  \
-##      $HOME/.config/nvim/confPlugin/plugins.vim 
-##
-##mv -f $HOME/.config/nvim/init.vim.bac \
-##      $HOME/.config/nvim/init.vim 
-##
-##+++++++++++++++++++++++++++++++++++++++++++++++
