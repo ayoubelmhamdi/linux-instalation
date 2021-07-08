@@ -1,7 +1,7 @@
 #!/bin/bash
 
 git clone --bare \
-    https://github.com/ayoubelmhamdi/dotfiles.git  \
+    https://github.com/ayoubelmhamdi/dotfiles.git -b void-linux \
     $HOME/.dotfiles 
 
 
