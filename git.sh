@@ -29,10 +29,10 @@ echo -e "\n\n\t" 										\
      "for git private me@scripts frome github\n"	\
 	 "git clone" 									\
      "git@github.com:ayoubelmhamdi/scripts.git\n"	\
-	>> $HOME/linux-ssh-github.txt
+	>> $HOME/github.txt
 
 
-cat  $HOME/linux-ssh-github.txt
+cat  $HOME/github.txt
 
 #++++++++++++++++++++++++++++++++++++++++
 
