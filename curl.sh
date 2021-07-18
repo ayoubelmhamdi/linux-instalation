@@ -12,7 +12,7 @@ echo "\n\n\t "\
      "begin install \n\n"
 
 git clone \
-    https://github.com/ayoubelmhamdi/ubuntu.git  \
+    https://github.com/ayoubelmhamdi/ubuntu.git -b ubu20 \
     $HOME/UBUNTU >/dev/null 2>&1
 
 sh $HOME/UBUNTU/install.sh
@@ -20,6 +20,6 @@ sh $HOME/UBUNTU/install.sh
 
 
 cd $HOME/UBUNTU/
-sudo rm -r node_modules package.json  >/dev/null 2>&1
+sudo rm -rf node_modules package.json  >/dev/null 2>&1
 
 echo  "\n\n END"
