@@ -1,7 +1,7 @@
 # UBUNTU
 ### curl
 ``
-sh -c "$(curl -fsSL https://github.com/ayoubelmhamdi/linux/blob/ubu20/curl.sh)"
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ayoubelmhamdi/linux/ubu20/curl.sh)"
 ``
 ### ssh
 
