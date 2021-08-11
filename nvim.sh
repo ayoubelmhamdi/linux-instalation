@@ -2,46 +2,23 @@
 
 if [[ ! -f `which nvim` ]]; then
 # clone last repo of neovim
-    git clone                                       \
+    cd /tmp
+    git clone --depth=1 --branch=master             \
         https://github.com/neovim/neovim.git        \
-        $HOME/neovim 
+        /tmp/neovim 
     
-    cd $HOME/neovim
+    cd /tmp/neovim
     make CMAKE_BUILD_TYPE=Release
     sudo make install
 fi
 
+# packer
+git clone https://github.com/wbthomason/packer.nvim    \
+ ~/.local/share/nvim/site/pack/packer/start/packer.nvim
+
 # clone my repo from github
-git clone                                          \
-    https://github.com/ayoubelmhamdi/nvim.git      \
+git clone                                              \
+    https://github.com/ayoubelmhamdi/nvim-lua.git      \
     $HOME/.config/nvim 
 
 
-# this folder for tell vim savetmp file there
-mkdir -p $HOME/.local/tmp
-mkdir -p $HOME/.config/coc/extensions 
-
-#  reset version coc-extenstion 
-echo '{"dependencies":{}}'> $HOME/.config/coc/extension/package.json
-
-
-#+++++++++++++++++++++++++++++++++++++++++++++++
-
-##mv -f $HOME/.config/nvim/init.vim                  \
-##      $HOME/.config/nvim/init.vim.bac
-##
-##mv -f $HOME/.config/nvim/confPlugin/plugins.vim    \
-##      $HOME/.config/nvim/init.vim 
-##
-nvim $HOME/.config/nvim/init.vim                   \
-     +PlugInstall                                  \
-     +qall 
-##
-##
-##mv -f $HOME/.config/nvim/init.vim                  \
-##      $HOME/.config/nvim/confPlugin/plugins.vim 
-##
-##mv -f $HOME/.config/nvim/init.vim.bac \
-##      $HOME/.config/nvim/init.vim 
-##
-##+++++++++++++++++++++++++++++++++++++++++++++++

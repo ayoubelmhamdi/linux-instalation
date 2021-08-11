@@ -36,17 +36,17 @@ sudo xbps-install -Sy     \
 # unlock path of neovim provider
 # used for fix provider3
 
-pip3  install           \
-      pynvim            \
-      neovim-remote     \
-      ueberzug          \
+# pip3  install           \
+#       pynvim            \
+#       neovim-remote     \
+#       ueberzug          \
 
-python3 -m pip install --user --upgrade pynvim
-python2 -m pip install --user --upgrade pynvim
+# python3 -m pip install --user --upgrade pynvim
+# python2 -m pip install --user --upgrade pynvim
 
-npm i npm                    \
-      bash-language-server   \
-      neovim
+# npm i npm                    \
+#       bash-language-server   \
+#       neovim
 
 #npm install                \
 #    coc-actions            \
@@ -79,8 +79,8 @@ npm i npm                    \
 #     --no-package-lock     \
 #     --only=prod           \
 
-sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs \
-       https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
+# sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs \
+#        https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
 
 
 
